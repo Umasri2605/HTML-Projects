@@ -5,18 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather App</title>
 </head>
-<body>
+<body style="font-family: Arial; color: #ffffff; text-align: center; margin: 0; padding: 20px;
+             background-color: #ffe5b4;"> <!-- Light peach background -->
 
-  <h2>Weather App</h2>
+  <h1 style="color: #ffeb3b; text-shadow: 2px 2px 4px #000;">🌦 Weather App</h1>
+  <p style="font-size: 18px; text-shadow: 1px 1px 3px #000;">Get the current weather information for your city</p>
 
-  <form>
-    <label for="cityInput">Enter City Name:</label><br>
-    <input type="text" id="cityInput" name="cityInput" placeholder="City name"><br><br>
-    <input type="submit" value="Get Weather">
-  </form>
-  <h3>Weather Details</h3>
-  <p>City: __________</p>
-  <p>Temperature: __________</p>
-  <p>Condition: __________</p>
+  <hr style="width: 80%; border: 1px solid #fff;">
+
+  <div style="margin: 30px auto; background-color: rgba(255,255,255,0.85); width: 60%; padding: 20px; border-radius: 10px; color: #000; box-shadow: 0 0 10px rgba(0,0,0,0.4);">
+    <h2 style="color: #0277bd;">Enter City</h2>
+    <form>
+      <label for="cityInput" style="font-size: 16px;">City Name:</label><br><br>
+      <input type="text" id="cityInput" name="cityInput" placeholder="Enter city name" 
+             style="padding: 10px; width: 60%; border: 1px solid #90caf9; border-radius: 5px;"><br><br>
+      <input type="submit" value="Get Weather" 
+             style="padding: 10px 20px; background-color: #0288d1; border: none; color: white; border-radius: 5px; cursor: pointer;">
+    </form>
+  </div>
+
+  <div style="margin: 30px auto; background-color: rgba(255,255,255,0.85); width: 60%; padding: 20px; border-radius: 10px; color: #000; box-shadow: 0 0 10px rgba(0,0,0,0.4);">
+    <h2 style="color: #0277bd;">Weather Details</h2>
+    <p><b>City:</b> __________</p>
+    <p><b>Temperature:</b> __________</p>
+    <p><b>Condition:</b> __________</p>
+    <p><b>Humidity:</b> __________</p>
+    <p><b>Wind Speed:</b> __________</p>
+  </div>
+
+  <footer style="margin-top: 20px;">
+    <p style="color: #fff; text-shadow: 1px 1px 3px #000;">© 2025 Weather App | Designed using Inline Styling</p>
+  </footer>
+
 </body>
 </html>
